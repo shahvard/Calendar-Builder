@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Calendar</title>
+       <style>
+           body{
+               padding-left:450px;
+               padding-right:450px;
+               padding-top:200px;
+               background-color:orange;
+           }
+          form{
+               padding-left:100px;
+               border-style:solid;
+               padding-top:100px;
+               padding-bottom:100px;
+               padding-right:100px;
+           }
+           p{
+               color:red;
+           }
+       </style>
+		</head>
+		<body class="bodydesign">
+		    <div>
+		<form action="cal_action.php">
+		Select Month :
+		<select name="Month">
+		    
+		<option>-Month-</option>
+<option value="January">January</option>
+<option value="February">Febuary</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select>
+<br><br>
+Select the First Day Of Month :
+<select name="firstDay">
+    <option>--Day--</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+    
+    
+</select>
+<br><br>
+Nickname : <input type="text" name="nickname" maxlength="40" > 
+<br><br>
+Select Font Color  : <input type="color" name="coloroftext">
+<br><br>
+<p>If the Month and First day is not selected then current month value would be taken.</p>
+<input type="submit">
+</form>
+ </div>
+ 
+</body>
+</html>
